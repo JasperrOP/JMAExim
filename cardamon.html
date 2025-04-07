@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cardamom - JMA EXIM</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: flex;
+      gap: 40px;
+    }
+
+    .product-image {
+      flex: 1;
+    }
+
+    .product-image img {
+      width: 100%;
+      max-width: 350px;
+      border: 1px solid #ddd;
+      padding: 10px;
+      background-color: #fff;
+    }
+
+    .product-details {
+      flex: 2;
+    }
+
+    .product-details h1 {
+      margin-top: 0;
+    }
+
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    .info-table td {
+      padding: 10px 5px;
+      vertical-align: top;
+    }
+
+    .info-table td:first-child {
+      font-weight: bold;
+      width: 200px;
+    }
+
+    .btn {
+      background-color: #03b21b;
+      color: #000;
+      padding: 12px 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+
+    .btn:hover {
+      background-color: #03b21b;
+    }
+
+    .enquiry-section {
+      background-color: #fff;
+      padding: 30px;
+      margin: 40px auto;
+      width: 90%;
+      max-width: 1200px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .enquiry-section h2 {
+      margin-top: 0;
+    }
+
+    .enquiry-form input, .enquiry-form textarea, .enquiry-form select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="product-image">
+    <img src="cardamon.jpg" alt="Cardamom">
+  </div>
+
+  <div class="product-details">
+    <h1>Cardamom</h1>
+    <table class="info-table">
+      <tr>
+        <td>Business Type:</td>
+        <td>Exporter, Supplier</td>
+      </tr>
+      <tr>
+        <td>Type:</td>
+        <td>Green Cardamom</td>
+      </tr>
+      <tr>
+        <td>Style:</td>
+        <td>Dried</td>
+      </tr>
+      <tr>
+        <td>Certification:</td>
+        <td>FSSAI Certified</td>
+      </tr>
+      <tr>
+        <td>Location:</td>
+        <td>Worldwide (USA, UAE, Malaysia, etc.)</td>
+      </tr>
+      <tr>
+        <td>Color:</td>
+        <td>Natural Green</td>
+      </tr>
+      <tr>
+        <td>Shelf Life:</td>
+        <td>1 Year</td>
+      </tr>
+      <tr>
+        <td>Drying Process:</td>
+        <td>Sun Dried</td>
+      </tr>
+      <tr>
+        <td>Packaging Size:</td>
+        <td>1kg, 5kg, 10kg</td>
+      </tr>
+    </table>
+
+    <button class="btn" onclick="document.getElementById('enquiry').scrollIntoView();">Yes! I am interested</button>
+  </div>
+</div>
+
+<div class="enquiry-section" id="enquiry">
+  <h2>Looking for "Cardamom"?</h2>
+  <form class="enquiry-form">
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="tel" placeholder="Mobile Number" required>
+    <textarea placeholder="Message"></textarea>
+    <button type="submit" class="btn">Send Enquiry</button>
+  </form>
+</div>
+
+</body>
+</html>
